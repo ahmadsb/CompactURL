@@ -29,8 +29,9 @@ def home_view(request):
         if used_form.is_valid():
             
             shortened_object = used_form.save()
+            
             # getting the complete site URL dynamically is by using the request object method build_absolute_uri
-            new_url = request.build_absolute_uri('/') + shortened_object.short_url
+            new_url = request.build_absolute_uri('/s/') + shortened_object.short_url
             
             long_url = shortened_object.long_url 
              
