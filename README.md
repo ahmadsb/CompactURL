@@ -10,6 +10,12 @@ python3 -m venv .venv
 # Activate the virtual environment
 source .venv/bin/activate
 
+# Make and run the migrations
+python3 manage.py makemigrations <br/>
+python3 manage.py migrate 
+
 # Run the application
-python3 manage.py migrate <br/>
 python3 manage.py runserver [addport]
+
+# Run the test
+python3 manage.py test  
