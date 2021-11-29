@@ -10,6 +10,6 @@ python3 -m venv .venv
 # Activate the virtual environment
 source .venv/bin/activate
 
-# Run the applications 
+# Run the application
 python3 manage.py migrate <br/>
 python3 manage.py runserver [addport]
